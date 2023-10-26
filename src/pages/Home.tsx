@@ -1,13 +1,14 @@
 import React from 'react'
+import { Hero } from '../components/home/Hero'
 
 export const Home = () => {
   return (
     <section>
         <div className="container">
-          <h1>Home</h1>
-          <h2>About</h2>
-          <h3>Contact</h3>
-          <h4>Blog</h4>
+         <h1>Home</h1>
+          <div className="home">
+            <Hero />
+          </div>
         </div>
     </section>
   )
