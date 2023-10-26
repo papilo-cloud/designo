@@ -1,0 +1,43 @@
+header{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-top: 1rem;
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .header nav {
+    display: none;
+} */
+
+@media (max-width: 50em) {
+    .header nav{
+        position: fixed;
+        top: 0;
+        width: 80%;
+        margin-inline: auto;
+        padding-block: 40px;
+        background-color: brown;
+        display: block;
+        z-index: 1;
+        /* display: none; */
+    }
+}
+@media (min-width: 50em) {
+    .header nav{
+        display: block;
+    }
+    .header nav ul{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .header .hamburger{
+        display: none;
+    }
+}
