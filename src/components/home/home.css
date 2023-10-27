@@ -8,6 +8,7 @@
     background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
     /* background-position: 0 0; */
+    border-radius: 15px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -49,7 +50,7 @@
 }
 .hero .img img{
     position: absolute;
-    top: 580px;
+    top: 50px;
     bottom: 0;
 }
 @media screen and (min-width: 768px) {
