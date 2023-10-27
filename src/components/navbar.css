@@ -2,7 +2,7 @@ header{
     position: relative;
     width: 100%;
     margin: 0;
-    padding-block: 1rem;
+    padding: 1.4rem 1rem;
     background-color: #fff;
 }
 .header{
@@ -22,21 +22,29 @@ header{
 @media (max-width: 50em) {
     .header nav{
         position: fixed;
-        top: 3.7rem;
+        top: 4.4rem;
         width: 100%;
         left: 0;
         margin-inline: auto;
         padding-block: 20px;
         background-color: #000;
+        transition: all .7s;
         display: block;
         z-index: 1;
         height: 275px;
-        display: none;
+        scale: 0;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .header .open{
+        scale: 1;
+        opacity: 1;
     }
     .header nav ul {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 16px;
         width: auto;
         justify-content: center;
         align-items: center;
@@ -61,6 +69,7 @@ header{
     }
     .header nav ul li a{
         color: #333136;
+        font-size: 14px;
     }
     .header .hamburger{
         display: none;
