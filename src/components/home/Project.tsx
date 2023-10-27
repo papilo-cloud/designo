@@ -1,4 +1,3 @@
-import React from 'react'
 import arrow from '../../assets/shared/desktop/icon-right-arrow.svg'
 
 export const Project = () => {
