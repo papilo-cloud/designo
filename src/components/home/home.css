@@ -1,0 +1,20 @@
+.hero{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #E7816B;
+    background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.img{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.img img{
+
+}

@@ -76,6 +76,34 @@ ul{
     width: min(1110px, 100% - 1rem);
     margin-inline: auto;
 }
+.container section{
+  position: relative;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'H H H' 'A Ar .' 'A F F';
+  grid-auto-rows: minmax(200px, auto);
+}
+.container section .one{
+  position: relative;
+  padding: 30px;
+}
+.container section .one1{
+  background: wheat;
+  grid-area: H;
+}
+section .one2{
+  background-color: rebeccapurple;
+  grid-area: Ar;
+}
+section .one3{
+  background-color: blue;
+  grid-area: A;
+}
+section .one4{
+  background-color: brown;
+  grid-area: F;
+}
 /* @media (min-width: 768px){
     .app .container{
         max-width: 1110px;
