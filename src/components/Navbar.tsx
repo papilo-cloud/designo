@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo/logo-dark.png'
 import hamburger from '../assets/shared/mobile/icon-hamburger.svg'
 import './navbar.css'
-import React, { ChangeEvent,MouseEvent, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export const Navbar = () => {
 
