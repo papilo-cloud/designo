@@ -19,7 +19,7 @@ header{
     display: none;
 } */
 
-@media (max-width: 50em) {
+@media (max-width: 48em) {
     .header nav{
         position: fixed;
         top: 4.4rem;
@@ -57,9 +57,9 @@ header{
         color: #fff;
     }
 }
-@media (min-width: 50em) {
+@media (min-width: 48em) {
     header{
-        padding: 0;
+        padding: 0 1em;
     }
     .header{
         height: 95px;

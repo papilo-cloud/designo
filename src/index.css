@@ -82,11 +82,10 @@ ul{
 }
 
 .app .container{
-    --max-width: 1110px;
     width: min(1110px, 100%);
     margin-inline: auto;
 }
-@media screen and (max-width:50em) {
+@media screen and (max-width:48em) {
     
     h1 {
         font-size: 2em;
