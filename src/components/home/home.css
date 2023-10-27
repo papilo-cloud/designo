@@ -53,6 +53,55 @@
     top: 50px;
     bottom: 0;
 }
+
+.project{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* height: 798px; */
+    margin-top: 96px;
+}
+.project .flex .design{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #E7816B;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    transition: all .3s;
+}
+.project .flex .design :hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.project .flex .web{
+    background-image: url('../../assets/home/mobile/image-web-design.jpg');
+}
+.project .flex .app{
+    background-image: url('../../assets/home/mobile/image-app-design.jpg');
+}
+.project .flex .graphic{
+    background-image: url('../../assets/home/mobile/image-graphic-design.jpg');
+}
+.project .flex .design-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.project .flex .design-text h4{
+    font-weight: 400;
+}
+
 @media screen and (min-width: 48em) {
     .hero{
         background-position: 100% 45%;
@@ -70,6 +119,18 @@
     .hero .img{
         height: 100%;
     }
+    .project .flex .design{
+        height: 200px;
+    }
+    .project .flex .web{
+        background-image: url('../../assets/home/tablet/image-web-design.jpg');
+    }
+    .project .flex .app{
+        background-image: url('../../assets/home/tablet/image-app-design.jpg');
+    }
+    .project .flex .graphic{
+        background-image: url('../../assets/home/tablet/image-graphic-design.jpg');
+    }
 }
 @media screen and (min-width: 75em) {
     .hero{
@@ -86,5 +147,14 @@
     }
     .hero .mesg .text-mesg{
         text-align: left;
+    }
+    .project .flex .web{
+        background-image: url('../../assets/home/desktop/image-web-design.jpg');
+    }
+    .project .flex .app{
+        background-image: url('../../assets/home/desktop/image-app-design.jpg');
+    }
+    .project .flex .graphic{
+        background-image: url('../../assets/home/desktop/image-graphic-design.jpg');
     }
 }

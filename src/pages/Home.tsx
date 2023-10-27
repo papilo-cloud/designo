@@ -1,6 +1,7 @@
 import React from 'react'
 import { Hero } from '../components/home/Hero'   
 import './home.css'                                                                                                                                                                                                                                                                                                                                                                                                                                        
+import { Project } from '../components/home/Project'
 
 export const Home = () => {
   return (
@@ -8,6 +9,7 @@ export const Home = () => {
         <div className="container">
           <div className="home">
             <Hero />
+            <Project />
           </div>
         </div>
     </section>
