@@ -2,13 +2,18 @@ header{
     position: relative;
     width: 100%;
     margin: 0;
-    padding-top: 1rem;
+    padding-block: 1rem;
+    background-color: blue;
 }
 .header{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header a img{
+    width: 196px;
+    height: 24px;
 }
 /* .header nav {
     display: none;
@@ -17,14 +22,31 @@ header{
 @media (max-width: 50em) {
     .header nav{
         position: fixed;
-        top: 0;
-        width: 80%;
+        top: 3.7rem;
+        width: 100%;
+        left: 0;
         margin-inline: auto;
-        padding-block: 40px;
-        background-color: brown;
+        padding-block: 20px;
+        background-color: #000;
         display: block;
         z-index: 1;
-        /* display: none; */
+        height: 275px;
+        display: none;
+    }
+    .header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .header nav ul li a{
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 25px;
+        color: #fff;
     }
 }
 @media (min-width: 50em) {
@@ -37,7 +59,11 @@ header{
         align-items: center;
         gap: 20px;
     }
+    .header nav ul li a{
+        color: #333136;
+    }
     .header .hamburger{
         display: none;
     }
+    
 }
