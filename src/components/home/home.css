@@ -7,8 +7,8 @@
     background-color: #E7816B;
     background-image: url('../../assets/home/desktop/bg-pattern-hero-home.svg');
     background-repeat: no-repeat;
-    /* background-position: 0 0; */
-    border-radius: 15px;
+    background-position: 0% 40%;
+    background-size: auto;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@
 }
 .hero .mesg h1{
     margin-bottom: 20px;
+    font-weight: 500;
 }
 .hero .mesg h3{
     font-size: 16px;
@@ -44,7 +45,6 @@
     height: 50%;
     position: relative;
     justify-content: center;
-    /* align-items: center; */
     display: flex;
     overflow: hidden;
 }
@@ -53,13 +53,38 @@
     top: 50px;
     bottom: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
+    .hero{
+        background-position: 100% 45%;
+        border-radius: 15px;
+    }
     .hero .mesg{
         width: 100%;
         height: 100%;
     }
     .hero .mesg .text-mesg{
-        height: 362px;
-        width: 573px;
+        width: 533px;
+
+    }
+   
+    .hero .img{
+        height: 100%;
+    }
+}
+@media screen and (min-width: 75em) {
+    .hero{
+        height: 643px;
+        flex-direction: row;
+    }
+    .hero .img img{
+        top: unset;
+        bottom: -70px;
+    }
+    .hero .mesg{
+        /* justify-content: flex-end; */
+        padding-left: 5.5em;
+    }
+    .hero .mesg .text-mesg{
+        text-align: left;
     }
 }
