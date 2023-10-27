@@ -1,9 +1,3 @@
-.home{
-    padding: 0 1.5em;
-}
 
-@media screen and (min-width: 51.2em) {
-    .home{
-        padding: 0;
-    }
-}
+
+
