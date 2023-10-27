@@ -50,7 +50,7 @@ header{
         align-items: center;
     }
     .header nav ul li a{
-        font-size: 24px;
+        font-size: 1.5em;
         font-weight: 400;
         letter-spacing: 2px;
         line-height: 25px;
@@ -58,6 +58,12 @@ header{
     }
 }
 @media (min-width: 50em) {
+    header{
+        padding: 0;
+    }
+    .header{
+        height: 95px;
+    }
     .header nav{
         display: block;
     }
@@ -69,7 +75,8 @@ header{
     }
     .header nav ul li a{
         color: #333136;
-        font-size: 14px;
+        font-size: 0.875em;
+        font-weight: 500;
     }
     .header .hamburger{
         display: none;
