@@ -121,18 +121,18 @@ main{
 .message .mesg-bdy{
     position: relative;
     width: 100%;
-    height: 412px;
+    height: 432px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 4em;
 }
 .mesg-bdy .illustration{
     position: relative;
     width: 202px;
     height: 202px;
-    margin-bottom: 2.4em;
+    /* margin-bottom: 2.4em; */
 }
 .mesg-bdy .illustration::before{
     position: absolute;
@@ -160,11 +160,12 @@ main{
 .mesg-bdy .text {
     position: relative;
     width: 100%;
-    height: 162px;
+    /* height: 162px; */
     text-align: center;
+    /* background-color: #E7816B; */
 }
 .mesg-bdy .text h3{
-    margin-bottom: 32px;
+    margin-block: 32px;
 }
 @media screen and (min-width: 48em) {
     main{
@@ -279,5 +280,21 @@ main{
     }
     .project .flex .graphic{
         background-image: url('../../assets/home/desktop/image-graphic-design.jpg');
+    }
+    .message{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .message .mesg-bdy{
+        flex-direction: column;
+        height: 412px;
+        width: 350px;
+    }
+    .mesg-bdy .text{
+        width: 100%;
+        text-align: center;
+    }
+    .mesg-bdy .text h3{
+        margin-block: 32px;
     }
 }

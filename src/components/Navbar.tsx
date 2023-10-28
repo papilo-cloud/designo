@@ -16,7 +16,6 @@ export const Navbar = () => {
         } else {
             document.body.style.overflow = 'unset'
         }
-        console.log(menu)
         function getTarget(e: any) {
             if (!menuRef.current?.contains(e.target) && !menuRef1.current.contains(e.target)) {
                 setMenu(false)
