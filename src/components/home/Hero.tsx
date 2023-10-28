@@ -2,7 +2,8 @@ import hero from '../../assets/home/desktop/image-hero-phone.png'
 import './home.css'
 export const Hero = () => {
   return (
-    <div className='hero'>
+    <main>
+      <div className='hero'>
         <div className="mesg">
             <div className='text-mesg'>
             <h1>Award-winning custom designs and digital branding solutions</h1>
@@ -17,6 +18,7 @@ export const Hero = () => {
         <div className="img">
             <img src={hero} alt="hero-background"  />
         </div>
-    </div>
+      </div>
+    </main>
   )
 }
