@@ -1,78 +1,119 @@
-
+footer{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 1.5em;
+    background-color: #333136;
+    /* height: 815px; */
+    padding-top: 311px;
+    margin-top: 311px;
+}
+.talk{
+    position: absolute;
+}
 .footer-link{
     position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #333136;
+    /* margin-top: 253px; */
 }
 
-.top{
+.list{
     position: relative;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    margin-inline: auto;
+
+    /* background-color: aquamarine; */
+    height: 198px;
 }
-.top a img{
+.list nav{
+    position: relative;
+    width: 100%;
+}
+.list .logo{
+    position: relative;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.list .logo img{
     width: 196px;
     height: 24px;
 }
-/* .top nav {
-    display: none;
-} */
+.list nav ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: auto;
+    height: 107px;
+    justify-content: center;
+    align-items: center;
+}
+.list nav ul li a{
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: #fff;
+}
 
-@media (max-width: 48em) {
-    .top {
+
+/* @media (max-width: 48em) {
+    .list {
         width: 100%;
-        left: 0;
         margin-inline: auto;
-        padding-block: 20px;
-        z-index: 1;
         height: 275px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .top .open{
-        scale: 1;
-        opacity: 1;
-    }
-    .top nav ul {
+    .list nav ul {
         display: flex;
         flex-direction: column;
         gap: 16px;
         width: auto;
+        height: 107px;
         justify-content: center;
         align-items: center;
     }
-    .top nav ul li a{
+    .list nav ul li a{
         font-size: 1.5em;
         font-weight: 400;
         letter-spacing: 2px;
         line-height: 25px;
         color: #fff;
     }
-}
+} */
 @media (min-width: 48em) {
-    /* top{
+    /* list{
         padding: 0 1em;
     } */
-    .top{
+    .list{
         height: 95px;
     }
-    .top nav{
-        display: block;
-    }
-    .top nav ul{
+
+    .list nav ul{
         position: relative;
         display: flex;
         align-items: center;
         gap: 20px;
     }
-    .top nav ul li a{
-        color: #333136;
+    .list nav ul li a{
+        color: #fff;
         font-size: 0.875em;
         font-weight: 500;
     }
   
+}
+@media screen and (min-width: 51.2em) {
+    footer{
+        padding: 0;
+    }
 }

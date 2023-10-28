@@ -1,11 +1,14 @@
 import { FooterLink } from "./FooterLink"
 import { Talk } from "./Talk"
+import './footer.css'
 
 export const Footer = () => {
   return (
     <footer>
-        <Talk />
-        <FooterLink />
+        <div className="container">
+          <Talk />
+          <FooterLink />
+        </div>
     </footer>
   )
 }
