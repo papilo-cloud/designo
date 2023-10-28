@@ -20,9 +20,10 @@ h1 {
     line-height: 48px;
   }
   
-  h1.little-h1 {
+  .title {
     font-size: 2.5em;
     line-height: 2.5em;
+    color: #FFAD9B;
   }
   
   h2 {
