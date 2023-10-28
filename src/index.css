@@ -106,3 +106,11 @@ ul{
         width: min(789px, 100%);
     }
 }
+@media (min-width: 75em){
+  .app {
+      background-image: url('./assets/shared/desktop/bg-pattern-leaf.svg');
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: 0 30%;
+  }
+}
