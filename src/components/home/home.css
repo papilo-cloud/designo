@@ -160,9 +160,8 @@ main{
 .mesg-bdy .text {
     position: relative;
     width: 100%;
-    /* height: 162px; */
     text-align: center;
-    /* background-color: #E7816B; */
+    color: #333136;
 }
 .mesg-bdy .text h3{
     margin-block: 32px;

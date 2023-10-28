@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo/logo-dark.png'
-import hamburger from '../assets/shared/mobile/icon-hamburger.svg'
+import logo from '../../assets/logo/logo-dark.png'
+import hamburger from '../../assets/shared/mobile/icon-hamburger.svg'
 import './navbar.css'
 import { useEffect, useRef, useState } from 'react'
 
@@ -14,7 +14,7 @@ export const Navbar = () => {
         if (menu) {
             document.body.style.overflow = 'hidden'
         } else {
-            document.body.style.overflow = 'unset'
+            document.body.style.overflow = 'unset' 
         }
         function getTarget(e: any) {
             if (!menuRef.current?.contains(e.target) && !menuRef1.current.contains(e.target)) {
@@ -26,7 +26,7 @@ export const Navbar = () => {
         return () => document.body.removeEventListener('click', getTarget)
     },[menu])
 
-  return (
+  return ( 
     <header>
         <div className='container'>
             <div className="header">
