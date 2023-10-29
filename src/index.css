@@ -106,6 +106,10 @@ ul{
     .app .container{
         width: min(789px, 100%);
     }
+    .title{
+      font-size: 2em;
+      line-height: 36px;
+    }
 }
 @media (min-width: 75em){
   .app {

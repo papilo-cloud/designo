@@ -15,9 +15,6 @@ header{
     width: 196px;
     height: 24px;
 }
-/* .header nav {
-    display: none;
-} */
 
 @media (max-width: 48em) {
     .header nav{
@@ -55,6 +52,7 @@ header{
         letter-spacing: 2px;
         line-height: 25px;
         color: #fff;
+        text-transform: uppercase;
     }
 }
 @media (min-width: 48em) {
@@ -75,8 +73,10 @@ header{
     }
     .header nav ul li a{
         color: #333136;
-        font-size: 0.875em;
+        font-size: 0.975em;
+        letter-spacing: 1px;
         font-weight: 500;
+        text-transform: uppercase;
     }
     .header .hamburger{
         display: none;
