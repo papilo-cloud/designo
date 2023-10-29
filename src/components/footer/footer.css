@@ -10,7 +10,6 @@ footer{
 }
 .talk{
     position: absolute;
-    position: relative;
     background-color: #E7816B;
     border-radius: 15px;
     top: -80%;
