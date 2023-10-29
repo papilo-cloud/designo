@@ -15,7 +15,6 @@ footer{
     top: -80%;
     height: 379px;
     width: 100%;
-    /* width: 300px; */
     padding: 14px 10px;
     display: flex;
     flex-direction: column;
@@ -32,10 +31,8 @@ footer{
     background-image: url('../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
     background-position: 30% 50%;
     background-repeat: no-repeat;
-    /* background-size: cover; */
     overflow: hidden;
     transform: rotateX(180deg);
-    /* transform: rotate(180deg); */
 }
 .talk .talk-text{
     position: relative;
@@ -43,11 +40,12 @@ footer{
     margin-inline: auto;
     align-items: center;
     width: 299px;
-    /* height: 173px; */
+    font-weight: 300;
     color: #fff;
 }
 .talk .talk-text h1{
     margin-bottom: 20px;
+    font-weight: 500;
 }
 footer .footer-link{
     position: relative;
@@ -55,7 +53,6 @@ footer .footer-link{
     padding: 0;
     width: 100%;
     height: 540px;
-    /* height: 498px; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -215,12 +212,17 @@ footer .footer-link{
         width: 100%;
         height: 78px;
         /* justify-content: space-between; */
+        /* align-items: unset; */
     }
     .details .detail{
         flex-direction: row;
         justify-content: space-between;
         width: 60%;
         height: 100%;
+        text-align: left;
+    }
+    .detail .detail-item{
+        align-items: flex-start;
     }
     .details .social{
         height: 100%;
@@ -240,5 +242,36 @@ footer .footer-link{
     }
 }
 @media screen and (min-width: 75em) {
-    
+    .talk{
+        height: 292px;
+        top: -350px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 57px 80px;
+    }
+    .talk::before{
+        background-position: 100% 50%;
+    }
+    .talk .talk-text{
+        width: 459px;
+        margin: 0;
+        text-align: left;
+        height: auto;
+    }
+    .talk .talk-text h1{
+        margin: 0;
+        width: 290px;
+        margin-bottom: 20px;
+
+    }
+    footer{
+        padding-top: 144px;
+        height: 393px;
+    }
+    .details .detail{
+        width: 50%;
+    }
+    .details .social{
+        width: 50%;
+    }
 }
