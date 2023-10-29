@@ -23,7 +23,6 @@ h1 {
   .title {
     font-size: 2.5em;
     line-height: 2.5em;
-    color: #FFAD9B;
   }
   
   h2 {
@@ -61,6 +60,7 @@ button{
   border-radius: 8px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .app .btn-light{
   color: #1D1C1E;
@@ -97,7 +97,7 @@ ul{
         line-height: 36px;
         letter-spacing: 1.399999976158142px;
       }
-      h1.little-h1 {
+      .title {
         font-size: 2em;
         line-height: 36px;
       }

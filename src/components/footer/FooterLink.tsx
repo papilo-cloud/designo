@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/logo-light.png'
-// import '../../index.css'
+import facebook from '../../assets/shared/desktop/icon-facebook.svg'
+import instagram from '../../assets/shared/desktop/icon-instagram.svg'
+import pinterest from '../../assets/shared/desktop/icon-pinterest.svg'
+import twitter from '../../assets/shared/desktop/icon-twitter.svg'
+import youtube from '../../assets/shared/desktop/icon-youtube.svg'
 import './footer.css'
 
 
@@ -32,16 +36,18 @@ export const FooterLink = () => {
                 </div>
                 <div className="detail-item">
                     <p className="bold opac">Contact Us (Central Office)</p>
-                    <p className="bold opac">P : +1 253-863-8967</p>
-                    <p className="bold opac">M : contact@designo.co</p>
+                    <p className="opac">P : +1 253-863-8967</p>
+                    <p className="opac">M : contact@designo.co</p>
                 </div>
             </div>
-            <div className="details-social">
-                <span className="social-icon social-icon-facebook"></span>
-                <span className="social-icon social-icon-youtube"></span>
-                <span className="social-icon social-icon-twitter"></span>
-                <span className="social-icon social-icon-pinterest"></span>
-                <span className="social-icon social-icon-insta"></span>
+            <div className="social">
+                <ul role='list'>
+                    <li><img src={facebook} alt="soaicl-icon-facebook" role='img' /></li>
+                    <li><img src={youtube} alt="soaicl-icon-youtube" role='img' /></li>
+                    <li><img src={twitter} alt="soaicl-icon-twitter" role='img' /></li>
+                    <li><img src={pinterest} alt="soaicl-icon-pinterest" role='img' /></li>
+                    <li><img src={instagram} alt="soaicl-icon-instagram" role='img' /></li>
+                </ul>
             </div>
         </div>
     </div>

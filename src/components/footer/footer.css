@@ -5,22 +5,46 @@ footer{
     background-color: #333136;
     height: 815px;
     padding-top: 253px;
-    /* margin-top: 300px; */
+    margin-top: 300px;
     bottom: 0;
 }
 .talk{
     position: absolute;
+    position: relative;
     background-color: #E7816B;
     border-radius: 15px;
     top: -80%;
     height: 379px;
+    width: 100%;
+    padding: 14px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    background-image: url('../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+    background-size: contain;
+    background-size: 120%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.talk .talk-text{
+    position: relative;
+    text-align: center;
+    margin-inline: auto;
+    /* width: 299px; */
+    /* height: 173px; */
+    color: #fff;
+}
+.talk .talk-text h1{
+    margin-bottom: 20px;
 }
 footer .footer-link{
     position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 560px;
+    height: 540px;
     /* height: 498px; */
     display: flex;
     justify-content: space-between;
@@ -51,7 +75,8 @@ footer .footer-link{
     content: '';
     width: 100%;
     height: 1px;
-    top: -30px;
+    top: -40px;
+    background-color: rgba(253, 243, 240, 0.3);
 }
 .list .logo img{
     width: 200px;
@@ -61,7 +86,7 @@ footer .footer-link{
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 24px;
     width: 100%;
     height: 127px;
     justify-content: flex-end;
@@ -73,7 +98,7 @@ footer .footer-link{
     font-weight: 400;
     letter-spacing: 2px;
     line-height: 25px;
-    color: #fff;
+    color: rgba(255, 255, 255, .9);
 }
 .details{
     position: relative;
@@ -86,7 +111,7 @@ footer .footer-link{
     justify-content: space-evenly;
 }
 .details .detail{
-    height: 80%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,14 +120,30 @@ footer .footer-link{
 .detail .detail-item{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    color: #fdf3f0;
+    color: rgba(255, 255, 255, 0.4);
+    align-items: center;
 }
-.detail .detail-item p .opac{
-
+.detail .detail-item .opac{
+    letter-spacing: 1px;
+    font-size: .8em;
 }
-.details .details-social{
+.detail .detail-item .bold{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 700;
+}
+.details .social{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     height: 20%;
+}
+.social ul{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: auto;
 }
 
 @media (min-width: 48em) {
