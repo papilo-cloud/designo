@@ -4,7 +4,7 @@ import arrow from '../../assets/shared/desktop/icon-right-arrow.svg'
 import './design.css'
 export const App = () => {
   return (
-    <div className='container apps'>
+    <div className='container apps design'>
         <div className="intro">
             <div className="text">
                 <h1>App Design</h1>

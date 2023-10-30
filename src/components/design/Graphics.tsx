@@ -6,7 +6,7 @@ import './design.css'
 
 export const Graphics = () => {
   return (
-    <div className='container graphics'>
+    <div className='container graphics design'>
         <div className="intro">
             <div className="text">
                 <h1>Graphic Design</h1>
