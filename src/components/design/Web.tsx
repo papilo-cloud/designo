@@ -5,7 +5,7 @@ import './design.css'
 
 export const Web = () => {
   return (
-    <div className='container web'>
+    <div className='container design web'>
       <div className="intro">
         <div className="text">
             <h1>Web Design</h1>

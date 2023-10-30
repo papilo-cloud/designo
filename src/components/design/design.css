@@ -1,4 +1,37 @@
-
+.design{
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+.design .intro{
+    width: 100%;
+    height: 320px;
+    background-color: #E7816B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+.web .intro{
+    background-image: url('../../assets/web-design/desktop/bg-pattern-intro-web.svg');
+}
+.apps .intro{
+    background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+}
+.graphics .intro{
+    background-image: url('../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
+}
+.intro .text{
+    position: relative;
+    width: 327px;
+    height: 110px;
+    text-align: center;
+    color: #fff;
+}
+.intro .text h1{
+    margin-bottom: 14px;
+}
 .flexex{
     position: relative;
     width: 100%;
