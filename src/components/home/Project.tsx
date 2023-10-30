@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import arrow from '../../assets/shared/desktop/icon-right-arrow.svg'
 
 export const Project = () => {

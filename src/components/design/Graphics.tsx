@@ -1,34 +1,53 @@
 import { Link } from 'react-router-dom'
 import arrow from '../../assets/shared/desktop/icon-right-arrow.svg'
+import datas from '../../data/graphic.json'
+import './design.css'
 
 
 export const Graphics = () => {
   return (
-    <div className='graphics'>
-        <div className="content">
-            
+    <div className='container graphics'>
+        <div className="intro">
+            <div className="text">
+                <h1>Graphic Design</h1>
+                <p>We deliver eye-catching branding materials that are 
+                tailored to meet your business objectives.</p>
+            </div>
         </div>
-        <div className="flex">
-            <div className="flex1">
+        <div className="content">
+            {datas.map(data => 
+                <div className="card" key={data.id}>
+                    <div className="img">
+                        <img src={data.imgUrl} alt={data.heading} />
+                    </div>
+                    <div className="card-text">
+                        <h3>{data.heading}</h3>
+                        <p>{data.text}</p>
+                    </div>
+                </div>
+            )}
+        </div>
+        <div className="flexex">
+            <div className="flex">
             <Link to='/web'>
-                <div className="design web">
+                <div className="designs web">
                     <div className="design-text">
                         <h2>web design</h2>
                         <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>
                     </div>
                 </div>
             </Link>
-        </div>
-        <div className="flex2">
-            <Link to='/app'>
-                <div className="design app">
-                    <div className="design-text">
-                        <h2>app design</h2>
-                        <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>
+            </div>
+            <div className="flex">
+                <Link to='/app'>
+                    <div className="designs app">
+                        <div className="design-text">
+                            <h2>app design</h2>
+                            <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>
+                        </div>
                     </div>
-                </div>
-            </Link>
-        </div>
+                </Link>
+            </div>
         </div>
         
     </div>

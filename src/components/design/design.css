@@ -1,0 +1,96 @@
+
+.flexex{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0 1.5em;
+    margin-top: 7.4em;
+    display: grid;
+    margin-bottom: 7.4em;
+}
+.flexex .flex .designs{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #E7816B;
+    border-radius: 15px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    transition: all .3s;
+}
+.flexex .flex .designs :hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.flexex .flex .web{
+    background-image: url('../../assets/home/mobile/image-web-design.jpg');
+}
+.flexex .flex .app{
+    background-image: url('../../assets/home/mobile/image-app-design.jpg');
+}
+.flexex .flex .graphic{
+    background-image: url('../../assets/home/mobile/image-graphic-design.jpg');
+}
+.flexex .flex .design-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.flexex .flex .design-text h4{
+    font-weight: 400;
+    /* pointer-events: none; */
+    cursor: pointer;
+}
+
+@media screen and (min-width: 48em) {
+    .flexex .flex .designs{
+        height: 200px;
+    }
+    .flexex .flex .web{
+        background-image: url('../../assets/home/tablet/image-web-design.jpg');
+    }
+    .flexex .flex .app{
+        background-image: url('../../assets/home/tablet/image-app-design.jpg');
+    }
+    .flexex .flex .graphic{
+        background-image: url('../../assets/home/tablet/image-graphic-design.jpg');
+    }
+}
+@media screen and (min-width: 51.2em) {
+  
+}
+@media screen and (min-width:75em) {
+    .flexex{
+        width: 100%;
+        height: 320px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+    }
+    .flexex .flex {
+        height: 100%;
+    }
+    .flexex .flex .designs{
+        margin-bottom: 0;
+    }
+    .flexex .flex .designs{
+        height: 100%;
+    }
+    .flexex .flex .web{
+        background-image: url('../../assets/home/desktop/image-web-design-large.jpg');
+    }
+    .flexex .flex .app{
+        background-image: url('../../assets/home/desktop/image-app-design.jpg');
+    }
+    .flexex .flex .graphic{
+        background-image: url('../../assets/home/desktop/image-graphic-design.jpg');
+    }
+}
