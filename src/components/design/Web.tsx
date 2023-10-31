@@ -15,7 +15,7 @@ export const Web = () => {
       </div>
       <div className="content">
           {datas.map(data => 
-              <div className="card" key={data.id}>
+              <div className="card" key={data.id} data-aos='fade-up' data-aos-duration="1000">
                   <div className="img">
                       <img src={data.imgUrl} alt={data.heading} />
                   </div>
@@ -29,7 +29,7 @@ export const Web = () => {
       <div className="flexex">
         <div className="flex">
           <Link to='/app'>
-            <div className="designs app">
+            <div className="designs app" data-aos='fade-up' data-aos-duration="1000">
                 <div className="design-text">
                     <h2>app design</h2>
                     <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>
@@ -39,7 +39,7 @@ export const Web = () => {
         </div>
         <div className="flex">
               <Link to='/graphic'>
-                  <div className="designs graphic">
+                  <div className="designs graphic" data-aos='fade-up' data-aos-duration="1000">
                       <div className="design-text">
                           <h2>graphic design</h2>
                           <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>

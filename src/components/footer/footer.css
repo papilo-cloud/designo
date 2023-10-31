@@ -15,7 +15,6 @@ footer{
     top: -80%;
     height: 379px;
     width: 100%;
-    padding: 14px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +38,7 @@ footer{
     text-align: center;
     margin-inline: auto;
     align-items: center;
-    width: 299px;
+    width: 270px;
     font-weight: 300;
     color: #fff;
 }
@@ -225,10 +224,8 @@ footer .footer-link{
     .details .social{
         height: 100%;
         width: 40%;
-        /* justify-content: space-around; */
     }
     .social ul{
-        /* width: 100%; */
         align-self: flex-end;
         position: absolute;
         right: 0;

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Navbar } from "./components/navbar/Navbar";
 import { Home } from "./pages/Home";
 import { Company } from "./pages/Company";
@@ -9,8 +9,21 @@ import { Footer } from "./components/footer/Footer";
 import { Web } from "./components/design/Web";
 import { Graphics } from "./components/design/Graphics";
 import { App as Apps } from "./components/design/App";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 function App() {
+
+  const location = useLocation()
+  useEffect(() => {
+    AOS.init()
+    AOS.refresh()
+  }, [])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
 
   return (
     <div className="app">
