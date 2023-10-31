@@ -73,7 +73,7 @@ header{
     }
     .header nav ul li a{
         color: #333136;
-        font-size: 0.975em;
+        font-size: 0.975em; 
         letter-spacing: 1px;
         font-weight: 500;
         text-transform: uppercase;
