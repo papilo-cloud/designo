@@ -16,7 +16,7 @@ export const Graphics = () => {
         </div>
         <div className="content">
             {datas.map(data => 
-                <div className="card" key={data.id}>
+                <div className="card" key={data.id} data-aos='fade-up' data-aos-duration="1000">
                     <div className="img">
                         <img src={data.imgUrl} alt={data.heading} />
                     </div>
@@ -30,7 +30,7 @@ export const Graphics = () => {
         <div className="flexex">
             <div className="flex">
             <Link to='/web'>
-                <div className="designs web">
+                <div data-aos='fade-up' data-aos-duration="1000" className="designs web">
                     <div className="design-text">
                         <h2>web design</h2>
                         <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>
@@ -40,7 +40,7 @@ export const Graphics = () => {
             </div>
             <div className="flex">
                 <Link to='/app'>
-                    <div className="designs app">
+                    <div data-aos='fade-up' data-aos-duration="1000" className="designs app">
                         <div className="design-text">
                             <h2>app design</h2>
                             <h4>view project <img src={arrow} alt="arrow-svg" /> </h4>
