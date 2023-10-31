@@ -44,7 +44,6 @@
 @media screen and (min-width: 425px) {
     .heros .img{
         background-image: url('../../assets/about/desktop/image-about-hero.jpg');
-        /* background-image: url(',,/'); */
         background-size: auto;
     }
     .hero-mesg .text{

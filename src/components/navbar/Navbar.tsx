@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/logo-dark.png'
 import hamburger from '../../assets/shared/mobile/icon-hamburger.svg'
+import close from '../../assets/shared/mobile/icon-close.svg'
 import './navbar.css'
 import { useEffect, useRef, useState } from 'react'
 
@@ -33,19 +34,22 @@ export const Navbar = () => {
                 <Link to="/" className='logo'><img src={logo} alt="logo" /></Link>
                 <nav className={menu ? 'open': ''} ref={menuRef}>
                     <ul>
-                        <li>
+                        <li onClick={() => setMenu(!menu)}>
                             <Link to='/company'>Our Company</Link>
                         </li>
-                        <li>
+                        <li onClick={() => setMenu(!menu)}>
                             <Link to='/location'>Location</Link>
                         </li>
-                        <li>
+                        <li onClick={() => setMenu(!menu)}>
                             <Link to='/contact'>Contact</Link>
                         </li>
                     </ul>
                 </nav>
                 <div className='hamburger' ref={menuRef1}>
-                    <button onClick={() => setMenu(!menu)} ><img src={hamburger} alt="hamburger" /></button>
+                    <button onClick={() => setMenu(!menu)} >
+                        {menu ? <img src={close} alt="close" role='img'/>:
+                        <img src={hamburger} alt="hamburger" role='img'/>}
+                    </button>
                 </div>
             </div>
         </div>
