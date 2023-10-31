@@ -13,6 +13,7 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-position: 100%;
+    margin-bottom: 8em;
 }
 .design .intro h1{
     font-weight: 500;
@@ -50,12 +51,12 @@
     margin: 0;
     margin-top: 97px;
     padding: 0 1.5em;
+    margin-bottom: 8em;
  }
  .content .card{
     position: relative;
     width: 100%;
     height: 478px;
-    background-color: #E7816B;
     margin-bottom: 1.5em;
     overflow: hidden;
     border-radius: 15px;
@@ -71,7 +72,6 @@
     left: 0;
     width: 100%;
     height: 320px;
-    /* object-fit: cover; */
     height: 100%;
   }
   .card .card-text{
@@ -106,10 +106,8 @@
 .flexex{
     position: relative;
     width: 100%;
-    margin: 0;
     padding: 0 1.5em;
     display: grid;
-    margin: 7.4em 0;
 }
 .flexex .flex .designs{
     position: relative;
@@ -172,6 +170,7 @@
     }
     .card .card-text {
         height: 100%;
+        padding: 109px 41px 108px 32px;
     }
     .flexex{
         padding: 0;
@@ -206,8 +205,26 @@
     }
 }
 
-@media screen and (min-width:64em) {
-    
+@media screen and (min-width:75em) {
+    .design .content{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+    .content .card{
+        display: unset;
+        height: 478px;
+        margin-bottom: 0;
+    }
+    .card .img{
+        height: 320px;
+      }
+      .card .card-text{
+        padding: 32px;
+        width: 100%;
+        height: 158px;
+      }
     .flexex{
         width: 100%;
         height: 320px;
