@@ -31,13 +31,13 @@ export const FooterLink = () => {
             <div className="detail">
                 <div className="detail-item">
                     <p className="bold opac">Designo Central Office</p>
-                    <p className="opac">3886 Wellington Street</p>
-                    <p className="opac">Toronto, Ontario M9C 3J5</p>
+                    <p className="">3886 Wellington Street</p>
+                    <p className="">Toronto, Ontario M9C 3J5</p>
                 </div>
                 <div className="detail-item">
                     <p className="bold opac">Contact Us (Central Office)</p>
-                    <p className="opac">P : +1 253-863-8967</p>
-                    <p className="opac">M : contact@designo.co</p>
+                    <p className=" bold">P : +1 253-863-8967</p>
+                    <p className=" bold">M : contact@designo.co</p>
                 </div>
             </div>
             <div className="social">
