@@ -34,7 +34,6 @@
 .hero-mesg .text{
     position: relative;
     height: 320px;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +78,7 @@
 }
 .talent-mesg .text, .deal-mesg .text{
     position: relative;
-    width: 84.5%;
+    width: 94.5%;
     height: 385px;
     display: flex;
     flex-direction: column;
@@ -155,6 +154,9 @@
         background-image: url('../../assets/about/tablet/image-world-class-talent.jpg');
         background-size: cover;
     }
+    .talent-mesg .text, .deal-mesg .text{
+        position: relative;
+        width: 84.5%;}
     .deal .deal-img{
         background-image: url('../../assets/about/tablet/image-real-deal.jpg');
         background-size: cover;
