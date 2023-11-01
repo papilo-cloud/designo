@@ -20,19 +20,12 @@ footer{
     justify-content: center;
     gap: 35px;
     align-items: center;
-   overflow: hidden;
-}
-.talk::before{ 
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 379px;
-    background-image: url('../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
-    background-position: 30% 50%;
-    background-repeat: no-repeat;
     overflow: hidden;
-    transform: rotateX(180deg);
+    background-image: url('../../assets/shared/desktop/bg-pattern-call-to-action.svg');
+    background-repeat: no-repeat;
+    background-position: 30%;
 }
+
 .talk .talk-text{
     position: relative;
     text-align: center;
@@ -165,9 +158,7 @@ footer .footer-link{
         top: -250%;
         height: 350px;
         padding: 57px;
-    }
-    .talk::before{
-        background-position: 0 50%;
+        background-position: -40% 50%;
     }
     .talk .talk-text{
         width: 448px;
@@ -245,10 +236,9 @@ footer .footer-link{
         flex-direction: row;
         justify-content: space-between;
         padding: 57px 80px;
-    }
-    .talk::before{
         background-position: 100% 50%;
     }
+
     .talk .talk-text{
         width: 459px;
         margin: 0;
