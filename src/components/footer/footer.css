@@ -22,7 +22,7 @@ footer{
     align-items: center;
    overflow: hidden;
 }
-.talk::before{
+.talk::before{ 
     content: '';
     position: absolute;
     width: 100%;
@@ -119,15 +119,17 @@ footer .footer-link{
 .detail .detail-item{
     display: flex;
     flex-direction: column;
-    color: rgba(255, 255, 255, 0.4);
     align-items: center;
 }
-.detail .detail-item .opac{
+.detail .detail-item p{
+    font-size: .9em;
     letter-spacing: 1px;
-    font-size: .8em;
+    color: rgba(255, 255, 255, 0.4);
+}
+.detail .detail-item .opac{
+    color: rgba(255, 255, 255, 0.5);
 }
 .detail .detail-item .bold{
-    color: rgba(255, 255, 255, 0.6);
     font-weight: 700;
 }
 .details .social{
@@ -269,4 +271,7 @@ footer .footer-link{
     .details .social{
         width: 50%;
     }
+.detail .detail-item p{
+    font-size: 1em;
+}
 }

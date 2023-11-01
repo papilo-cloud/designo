@@ -93,8 +93,10 @@
         grid-row: 1;
     }
     .hero-mesg .text{
-        width: 424px;
+        width: 474px;
         height: 236px;
+        text-align: left;
+        align-items: flex-start;
     }
     .heros .img{
         height: 480px;
