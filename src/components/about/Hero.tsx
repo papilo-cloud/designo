@@ -1,7 +1,8 @@
 import './about.css'
 export const Hero = () => {
   return (
-    <div className="heros">
+    <div className="main">
+      <div className="heros">
         <div className="img"></div>
         <div className="hero-mesg">
             <div className="text">
@@ -13,6 +14,7 @@ export const Hero = () => {
                  and digital experiences that connect with our clients’ audiences.</p>            
             </div>
         </div>
+      </div>
     </div>
   )
 }
