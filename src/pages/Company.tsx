@@ -1,3 +1,4 @@
+import { Deal } from "../components/about/Deal"
 import { Hero } from "../components/about/Hero"
 import { Location } from "../components/about/Location"
 import { Talent } from "../components/about/Talent"
@@ -9,6 +10,7 @@ export const Company = () => {
           <Hero />
           <Talent />
           <Location />
+          <Deal />
         </div>
     </section>
   )
