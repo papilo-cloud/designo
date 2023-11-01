@@ -2,7 +2,7 @@ import './about.css'
 
 export const Talent = () => {
   return (
-    <div>
+    <div className='main' data-aos='fade-up' data-aos-duration="1000">
         <div className="talent">
             <div className="talent-img"></div>
             <div className="talent-mesg">

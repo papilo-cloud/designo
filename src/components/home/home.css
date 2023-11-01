@@ -223,7 +223,7 @@ main{
 }
 @media screen and (min-width: 51.2em) {
     main{
-        padding: 0;
+        padding: 0;  
     }
     .project{
         padding: 0;

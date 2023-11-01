@@ -66,21 +66,76 @@
     margin: 0;
     height: 545px;
     width: 100%;
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../../assets/shared/desktop/bg-pattern-three-circles.svg');
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 .talent-mesg .text{
     position: relative;
     width: 84.5%;
     height: 385px;
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    color: #1D1C1E;
+}
+.talent-mesg .text h2{
+    color: #E7816B;
+}
+.locations{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 1188px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.locations .location{
+    position: relative;
+    margin: 0;
+    height: 364px;
+    /* background-color: #E7816B; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.location .location-img{
+    width: 202px;
+    height: 202px;
+    /* background-color: yellow; */
+}
+.location .location-img::before{
+    position: absolute;
+    content: '';
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+}
+.location .one::before{
+    background: linear-gradient(90deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.location .two::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.117569) 100%);
+}
+.location .three::before{
+    background: linear-gradient(180deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
+}
+.location .text{
+    /* background-color: blue; */
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (min-width: 425px) {
@@ -105,13 +160,28 @@
     .heros {
         border-radius: 15px;
         color: #E7816B;
+        margin-bottom: 7em;
     }
     .heros .hero-mesg{
         height: 312px;
+        background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+        background-position: -40% 140%;
     }
     .hero-mesg .text{
         width: 573px;
         height: 184px;
+    }
+    .talent{
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .talent .talent-mesg{
+        height: 416px;
+        background-position: 100% 100%;
+    }
+    .talent-mesg .text{
+        width: 582px;
+        height: 280px;
     }
 }
 @media screen and (min-width: 51.2em) {
@@ -129,7 +199,6 @@
     .heros .hero-mesg{
         width: 635px;
         height: 480px;
-        background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
         background-position:100% 100%;
         grid-column: 1 / 2;
         grid-row: 1;
@@ -148,7 +217,24 @@
         background-image: url('../../assets/about/desktop/image-about-hero.jpg');
 
     }
+    .talent{
+        display: flex;
+    }
     .talent .talent-img{
         background-image: url('../../assets/about/desktop/image-world-class-talent.jpg');
+        width: 476px;
+        height: 640px;
+    }
+    .talent .talent-mesg{
+        width: 634px;
+        height: 640px;
+        background-image: url('../../assets/shared/desktop/bg-pattern-two-circles.svg');
+        background-position: -280% 100%;
+    }
+    .talent-mesg .text{
+        width: 465px;
+        height: 332px;
+        text-align: left;
+        align-items: flex-start;
     }
 }
