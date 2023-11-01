@@ -23,16 +23,15 @@ header{
         width: 100%;
         left: 0;
         margin-inline: auto;
-        padding-block: 20px;
-        background-color: #000;
-        transition: all .7s;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: all .4s;
         display: block;
         z-index: 1;
-        height: 275px;
         scale: 0;
         opacity: 0;
         display: flex;
         justify-content: center;
+        height: 100vh;
     }
     .header .open{
         scale: 1;
@@ -41,10 +40,12 @@ header{
     .header nav ul {
         display: flex;
         flex-direction: column;
-        gap: 16px;
-        width: auto;
+        gap: 20px;
+        width: 100%;
         justify-content: center;
+        height: 275px;
         align-items: center;
+        background-color: #000;
     }
     .header nav ul li a{
         font-size: 1.5em;
@@ -53,6 +54,7 @@ header{
         line-height: 25px;
         color: #fff;
         text-transform: uppercase;
+        
     }
 }
 @media (min-width: 48em) {

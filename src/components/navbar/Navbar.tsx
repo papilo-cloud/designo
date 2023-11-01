@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from 'react'
 export const Navbar = () => {
 
     const [menu, setMenu] = useState(false)
-    const menuRef = useRef<HTMLElement>(null!)
+    const menuRef = useRef<HTMLUListElement>(null!)
     const menuRef1 = useRef<HTMLDivElement>(null!)
 
     useEffect(() => {
@@ -32,8 +32,8 @@ export const Navbar = () => {
         <div className='container'>
             <div className="header">
                 <Link to="/" className='logo'><img src={logo} alt="logo" /></Link>
-                <nav className={menu ? 'open': ''} ref={menuRef}>
-                    <ul>
+                <nav className={menu ? 'open': ''}>
+                    <ul ref={menuRef}>
                         <li onClick={() => setMenu(!menu)}>
                             <Link to='/company'>Our Company</Link>
                         </li>
