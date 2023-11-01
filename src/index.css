@@ -108,7 +108,7 @@ ul{
   }
 @media (max-width: 75em){
     .app .container{
-        width: min(789px, 100%);
+        width: min(779px, 100%);
     }
     .title{
       font-size: 2em;

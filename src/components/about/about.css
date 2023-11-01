@@ -1,20 +1,22 @@
-
+.main{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
 .heros{
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .heros .img{
     position: relative;
     width: 100%;
     margin: 0;
     height: 320px;
-    /* background-color: black; */
     background-image: url('../../assets/about/mobile/image-about-hero.jpg');
     background-repeat: no-repeat;
-    /* background-size: contain; */
-    /* background-position: 0 0; */
 }
 .heros .hero-mesg{
     position: relative;
@@ -25,6 +27,9 @@
     align-items: center;
     justify-content: center;
     background-color: #E7816B;
+    background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 27%;
 }
 .hero-mesg .text{
     position: relative;
@@ -42,11 +47,60 @@
 }
 
 @media screen and (min-width: 425px) {
+    
     .heros .img{
-        background-image: url('../../assets/about/desktop/image-about-hero.jpg');
-        background-size: auto;
+        background-image: url('../../assets/about/tablet/image-about-hero.jpg');
+        background-size: cover;
     }
     .hero-mesg .text{
-        width: 327px;
+        width: 347px;
+    }
+}
+@media screen and (min-width: 48em) {
+    .main{
+        padding: 0 1.5em;
+    }
+    .heros {
+        border-radius: 15px;
+        color: #E7816B;
+    }
+    .heros .hero-mesg{
+        height: 312px;
+    }
+    .hero-mesg .text{
+        width: 573px;
+        height: 184px;
+    }
+}
+@media screen and (min-width: 51.2em) {
+    .main{
+        padding: 0;
+    }
+}
+@media screen and (min-width: 75em) {
+    .heros{
+        display: grid;
+        width: 100%;
+        grid-template-columns:635px calc(100% - 635px);
+        background-color: aqua;
+    }
+    .heros .hero-mesg{
+        width: 635px;
+        height: 480px;
+        background-image: url('../../assets/about/desktop/bg-pattern-hero-about-desktop.svg');
+        background-position:100% 100%;
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .hero-mesg .text{
+        width: 424px;
+        height: 236px;
+    }
+    .heros .img{
+        height: 480px;
+        width: 477px;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        background-color: yellow;
     }
 }
