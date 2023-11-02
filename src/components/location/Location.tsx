@@ -5,7 +5,7 @@ export const Location = () => {
   return (
     <div className="mainn">
         <div className="locate">
-            <div className="locates" data-aos='fade-up' data-aos-duration="1000">
+            <div className="locates flip" data-aos='fade-up' data-aos-duration="1000">
                 <div className="img canada"></div>
                 <div className="locate-mesg">
                     <h2>Canada</h2>
@@ -21,7 +21,7 @@ export const Location = () => {
                             <p>M : contact@designo.co</p>
                         </div>
                     </div>
-                </div>
+                </div> 
             </div>
             <div className="locates" data-aos='fade-up' data-aos-duration="1000">
                 <div className="img au"></div>
@@ -41,7 +41,7 @@ export const Location = () => {
                     </div>
                 </div>
             </div>
-            <div className="locates" data-aos='fade-up' data-aos-duration="1000">
+            <div className="locates flip" data-aos='fade-up' data-aos-duration="1000">
                     <div className="img uk"></div>
                 <div className="locate-mesg">
                     <h2>United Kingdom</h2>

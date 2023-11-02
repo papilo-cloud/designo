@@ -30,7 +30,7 @@
     background-color: #E7816B;
     background-image: url('../../assets/about/mobile/bg-pattern-hero-about-mobile.svg');
     background-repeat: no-repeat;
-    background-position: 100% 27%;
+    background-position: 100% 22%;
 }
 .hero-mesg .text{
     position: relative;
@@ -195,7 +195,7 @@
     .talent-mesg .text, .deal-mesg .text{
         width: 582px;
         height: 280px;
-    }
+    } 
 }
 @media screen and (min-width: 51.2em) {
     .main{

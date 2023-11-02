@@ -12,18 +12,21 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    background-image: url('../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 20% 0%;
 }
 .contact-bdy .contact-mesg{
     position: relative;
     width: 100%;
     height: 305px;
-    /* background-color: aliceblue; */
+    padding: 0 8px;
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 .contact-mesg .text{
     height: 184px;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,13 +40,11 @@
     height: 431px;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     align-items: center;
     text-align: center;
     background-color: aquamarine;
 }
 .contact-bdy .form-bdy form{
-    /* margin-inline: auto; */
     height: 410px;
     width: 90.4%;
     background-color: bisque;
