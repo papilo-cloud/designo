@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import hero from '../../assets/home/desktop/image-hero-phone.png'
 import './home.css'
 export const Hero = () => {
@@ -11,7 +12,7 @@ export const Hero = () => {
                in creating fully responsive websites, app design, and engaging brand 
                experiences. Find out more about our services.</h3>
               <button className='btn btn-light'>
-                learn more
+                <Link to='/company'>learn more</Link>
               </button>
             </div>
         </div>
