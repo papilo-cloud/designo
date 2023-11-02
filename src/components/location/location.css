@@ -90,15 +90,7 @@
     .locates .img{
         border-radius: 15px;
     }
-    .locates .canada{
-        background-image: url('../../assets/locations/tablet/image-map-canada.png');
-    }
-    .locates .au{
-        background-image: url('../../assets/locations/tablet/image-map-australia.png');
-    }
-    .locates .uk{
-        background-image: url('../../assets/locations/tablet/image-map-uk.png');
-    }
+   
     .locates .locate-mesg{
         height: 320px;
         border-radius: 15px;
@@ -123,8 +115,38 @@
 
     }
 }
+@media screen and  (min-width: 48em) and (max-width: 75em) {
+    .locates .canada{
+        background-image: url('../../assets/locations/tablet/image-map-canada.png');
+    }
+    .locates .au{
+        background-image: url('../../assets/locations/tablet/image-map-australia.png');
+    }
+    .locates .uk{
+        background-image: url('../../assets/locations/tablet/image-map-uk.png');
+    }
+}
 @media screen and (min-width: 51.2em) {
     .mainn{
         padding: 0;
+    }
+}
+@media screen and (min-width: 75em) {
+    .locate{
+        height: 1034px;
+    }
+    .locate .locates{
+        flex-direction: row;
+        width: 100%;
+        height: 326px;
+    }
+    .locates .locate-mesg{
+        width: 730px;
+        padding: 88px 95px;
+        height: unset;
+    }
+    .locates .img{
+        width: 350px;
+        height: 326px;
     }
 }
