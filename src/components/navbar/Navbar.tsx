@@ -10,6 +10,24 @@ export const Navbar = () => {
     const [menu, setMenu] = useState(false)
     const menuRef = useRef<HTMLUListElement>(null!)
     const menuRef1 = useRef<HTMLDivElement>(null!)
+    const headRef = useRef<HTMLHeadElement>(null!)
+
+    useEffect(() => {
+        let position = window.scrollY
+        function scrollHeaderIntoView() {
+            let currentPosition = window.scrollY;
+            if ( position > currentPosition) {
+                headRef.current.style.top = '0';
+            } else {
+                headRef.current.style.top = '-100px';
+            }
+            headRef.current.style.transition = '.3s'
+            position = currentPosition;
+        }
+        window.addEventListener('scroll',scrollHeaderIntoView)
+        return () => window.removeEventListener('scroll', scrollHeaderIntoView)
+
+    }, [])
 
     useEffect(() => {
         if (menu) {
@@ -28,7 +46,7 @@ export const Navbar = () => {
     },[menu])
 
   return ( 
-    <header>
+    <header ref={headRef}>
         <div className='container'>
             <div className="header">
                 <Link to="/" className='logo'><img src={logo} alt="logo" /></Link>

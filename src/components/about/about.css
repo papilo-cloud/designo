@@ -2,6 +2,7 @@
     position: relative;
     margin: 0;
     padding: 0;
+    margin-top: 80px;
 }
 .heros{
     position: relative;
@@ -162,9 +163,12 @@
         background-size: cover;
     }
 }
+
+
 @media screen and (min-width: 48em) {
     .main{
         padding: 0 1.5em;
+        margin-top: 100px;
     }
     .heros {
         border-radius: 15px;
