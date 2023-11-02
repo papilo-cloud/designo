@@ -1,0 +1,56 @@
+.contact-us{
+    position: relative;
+    width: 100%;margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+.contact-us .contact-bdy{
+    position: relative;
+    width: 100%;
+    height: 764px;
+    background-color: #E7816B;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contact-bdy .contact-mesg{
+    position: relative;
+    width: 100%;
+    height: 305px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: flex-end;
+}
+.contact-mesg .text{
+    height: 184px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+.contact-bdy .form-bdy{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+    text-align: center;
+    background-color: aquamarine;
+}
+.contact-bdy .form-bdy form{
+    /* margin-inline: auto; */
+    height: 410px;
+    width: 90.4%;
+    background-color: bisque;
+}
+.form-bdy .label{
+    position: relative;
+    background-color: #E7816B;
+    margin-top: 36px;
+    height: 26px;
+}
