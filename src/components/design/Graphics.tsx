@@ -25,7 +25,7 @@ export const Graphics = () => {
                         <p>{data.text}</p>
                     </div>
                 </div>
-            )}
+            )} 
         </div>
         <div className="flexex">
             <div className="flex">

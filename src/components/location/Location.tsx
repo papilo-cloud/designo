@@ -7,9 +7,9 @@ export const Location = () => {
         <div className="locate">
             <div className="locates" data-aos='fade-up' data-aos-duration="1000">
                 <div className="img canada"></div>
-                <div className="locate-mesg" data-aos='zoom-in' data-aos-duration="1000">
+                <div className="locate-mesg">
                     <h2>Canada</h2>
-                    <div className="text">
+                    <div className="text" data-aos='zoom-in' data-aos-duration="1000">
                         <div className="office">
                             <p className="bold">Designo Central Office</p>
                             <p>3886 Wellington Street</p>
@@ -25,9 +25,9 @@ export const Location = () => {
             </div>
             <div className="locates" data-aos='fade-up' data-aos-duration="1000">
                 <div className="img au"></div>
-                <div className="locate-mesg" data-aos='zoom-in' data-aos-duration="1000">
+                <div className="locate-mesg">
                     <h2>Australia</h2>
-                    <div className="text">
+                    <div className="text" data-aos='zoom-in' data-aos-duration="1000">
                         <div className="office">
                             <p className="bold">Designo AU Office</p>
                             <p>19 Balonne Street</p>
@@ -43,9 +43,9 @@ export const Location = () => {
             </div>
             <div className="locates" data-aos='fade-up' data-aos-duration="1000">
                     <div className="img uk"></div>
-                <div className="locate-mesg" data-aos='zoom-in' data-aos-duration="1000">
+                <div className="locate-mesg">
                     <h2>United Kingdom</h2>
-                    <div className="text">
+                    <div className="text" data-aos='zoom-in' data-aos-duration="1000">
                         <div className="office">
                             <p className="bold">Designo UK Office</p>
                             <p>13  Colorado Way</p>
