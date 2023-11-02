@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../../index.css'
 
 
@@ -9,7 +10,9 @@ export const Talk = () => {
             <p>Ready to take it to the next level? Contact us today
                 and find out how our expertise can help your business grow.</p>
           </div>
-          <button className='btn btn-light'>get in touch</button>
+          <button className='btn btn-light'>
+            <Link to='/contact'>get in touch</Link>
+          </button>
       </div>
   )
 }

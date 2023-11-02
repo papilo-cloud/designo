@@ -1,6 +1,7 @@
 import canada from '../../assets/shared/desktop/illustration-canada.svg'
 import australia from '../../assets/shared/desktop/illustration-australia.svg'
 import london from '../../assets/shared/desktop/illustration-united-kingdom.svg'
+import { Link } from 'react-router-dom'
 
 export const Location = () => {
   return (
@@ -12,7 +13,9 @@ export const Location = () => {
                 </div>
                 <div className="text" data-aos='fade-up' data-aos-duration="1000">
                     <h3>canada</h3>
-                    <button className='btn btn-dark'>see location</button>
+                    <button className='btn btn-dark'>
+                        <Link to='/location'>see location</Link>
+                    </button>
                 </div>
             </div>
             <div className="location">
@@ -21,7 +24,9 @@ export const Location = () => {
                 </div>
                 <div className="text" data-aos='fade-up' data-aos-duration="1000">
                     <h3>australia</h3>
-                    <button className='btn btn-dark'>see location</button>
+                    <button className='btn btn-dark'>
+                        <Link to='/location'>see location</Link>
+                    </button>
                 </div>
             </div>
             <div className="location">
@@ -30,7 +35,9 @@ export const Location = () => {
                 </div>
                 <div className="text" data-aos='fade-up' data-aos-duration="1000">
                     <h3>london</h3>
-                    <button className='btn btn-dark'>see location</button>
+                    <button className='btn btn-dark'>
+                        <Link to='/location'>see location</Link>
+                    </button>
                 </div>
             </div>
         </div>
