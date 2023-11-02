@@ -51,6 +51,7 @@
     margin: 0;
     padding: 0;
     background-color: #fdf3f0;
+    margin-bottom: 7em;
 }
 .talent .talent-img{
     position: relative;
@@ -92,8 +93,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 1188px;
-    /* background-color: aqua; */
+    /* height: 1188px; */
+    height: 1230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,7 +104,6 @@
     position: relative;
     margin: 0;
     height: 364px;
-    /* background-color: #E7816B; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -111,7 +111,6 @@
 .location .location-img{
     width: 202px;
     height: 202px;
-    /* background-color: yellow; */
 }
 .location .location-img::before{
     position: absolute;
@@ -136,6 +135,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.location .text h3{
+    text-transform: uppercase;
+    color: #333136;
 }
 
 @media screen and (min-width: 425px) {
@@ -194,7 +197,6 @@
         display: grid;
         width: 100%;
         grid-template-columns:635px calc(100% - 635px);
-        background-color: aqua;
     }
     .heros .hero-mesg{
         width: 635px;

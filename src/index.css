@@ -68,13 +68,17 @@ button{
   transition: .3s;
 }
 .app .btn-dark{
-  color: #1D1C1E;
-  background-color: #FFAD9B;
+  color: #fff;
+  background-color: #E7816B;
 }
-.app .btn-dark:hover, .app .btn-light:hover{
+ .app .btn-light:hover{
   color: #fff;
   background-color: #FFAD9B;
-
+}
+.app .btn-dark:hover{
+  border: 2px solid #E7816B;
+  color: #1D1C1E;
+  background-color: #fff;
 }
 ul{
     margin: 0;
