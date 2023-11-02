@@ -124,7 +124,7 @@
     transition: all .3s;
 }
 .flexex .flex .designs :hover{
-    background-color: #FFAD9B;
+    background-color: rgba(231, 129, 107, 0.4);
     transition: all .3s;
 }
 .flexex .flex .web{
@@ -184,7 +184,7 @@
         height: 252px;
         border-radius: 15px;
     }
-    .intro .text{
+    .intro .text{ 
         max-width: 391px;
         height: 114px;
     }

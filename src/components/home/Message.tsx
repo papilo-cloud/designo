@@ -1,6 +1,9 @@
 import friendly from '../../assets/home/desktop/illustration-friendly.svg'
 import passionate from '../../assets/home/desktop/illustration-passionate.svg'
 import resourceful from '../../assets/home/desktop/illustration-resourceful.svg'
+import './home.css'
+
+
 export const Message = () => {
   return (
     <div className="message">
