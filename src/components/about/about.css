@@ -45,7 +45,7 @@
 .hero-mesg .text h1{
     margin-bottom: 18px;
 }
-.talent{
+.talent, .deal{
     position: relative;
     width: 100%;
     margin: 0;
@@ -53,7 +53,7 @@
     background-color: #fdf3f0;
     margin-bottom: 7em;
 }
-.talent .talent-img{
+.talent .talent-img , .deal .deal-img{
     position: relative;
     width: 100%;
     height: 320px;
@@ -62,7 +62,10 @@
     background-image: url('../../assets/about/mobile/image-world-class-talent.jpg');
     background-repeat: no-repeat;
 }
-.talent .talent-mesg{
+.deal .deal-img{
+    background-image: url('../../assets/about/mobile/image-real-deal.jpg');
+}
+.talent .talent-mesg, .deal .deal-mesg{
     position: relative;
     margin: 0;
     height: 545px;
@@ -74,7 +77,7 @@
     background-repeat: no-repeat;
     overflow: hidden;
 }
-.talent-mesg .text{
+.talent-mesg .text, .deal-mesg .text{
     position: relative;
     width: 84.5%;
     height: 385px;
@@ -83,9 +86,9 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    color: #1D1C1E;
+    color: #333136;
 }
-.talent-mesg .text h2{
+.talent-mesg .text h2, .deal-mesg .text h2{
     color: #E7816B;
 }
 .locations{
@@ -93,12 +96,12 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    /* height: 1188px; */
     height: 1230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 8em;
 }
 .locations .location{
     position: relative;
@@ -129,7 +132,6 @@
     background: linear-gradient(180deg, rgba(93, 2, 2, 0.117569) 0%, rgba(93, 2, 2, 0.0001) 100%);
 }
 .location .text{
-    /* background-color: blue; */
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -142,17 +144,19 @@
 }
 
 @media screen and (min-width: 425px) {
-    
     .heros .img{
         background-image: url('../../assets/about/tablet/image-about-hero.jpg');
         background-size: cover;
     }
-
     .hero-mesg .text{
         width: 347px;
     }
     .talent .talent-img{
         background-image: url('../../assets/about/tablet/image-world-class-talent.jpg');
+        background-size: cover;
+    }
+    .deal .deal-img{
+        background-image: url('../../assets/about/tablet/image-real-deal.jpg');
         background-size: cover;
     }
 }
@@ -174,15 +178,15 @@
         width: 573px;
         height: 184px;
     }
-    .talent{
+    .talent, .deal{
         border-radius: 15px;
         overflow: hidden;
     }
-    .talent .talent-mesg{
+    .talent .talent-mesg, .deal .deal-mesg{
         height: 416px;
         background-position: 100% 100%;
     }
-    .talent-mesg .text{
+    .talent-mesg .text, .deal-mesg .text{
         width: 582px;
         height: 280px;
     }
@@ -222,21 +226,34 @@
     .talent{
         display: flex;
     }
+    .deal{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .talent .talent-img{
         background-image: url('../../assets/about/desktop/image-world-class-talent.jpg');
         width: 476px;
         height: 640px;
     }
-    .talent .talent-mesg{
+    .deal .deal-img{
+        width: 476px;
+        height: 640px;
+        background-image: url('../../assets/about/desktop/image-real-deal.jpg');
+    }
+    .talent .talent-mesg, .deal .deal-mesg{
         width: 634px;
         height: 640px;
         background-image: url('../../assets/shared/desktop/bg-pattern-two-circles.svg');
         background-position: -280% 100%;
     }
-    .talent-mesg .text{
+    .talent-mesg .text, .deal-mesg .text{
         width: 465px;
         height: 332px;
         text-align: left;
         align-items: flex-start;
+    }
+    .locations{
+        height: 364px;
+        flex-direction: row;
     }
 }
