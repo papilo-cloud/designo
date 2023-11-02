@@ -3,6 +3,7 @@ main{
     width: 100%;
     margin: 0;
     padding: 0;
+    margin-top: 80px;
 }
 .hero{
     position: relative;
@@ -53,11 +54,16 @@ main{
     justify-content: center;
     display: flex;
     overflow: hidden;
+    /* background-color: #333136; */
+    /* overflow: hidden; */
 }
 .hero .img img{
     position: absolute;
     top: 50px;
     bottom: 0;
+    border-radius: 50px;
+    box-shadow: 14px -14px 204px 28px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
 }
 
 .project{
@@ -168,6 +174,7 @@ main{
 @media screen and (min-width: 48em) {
     main{
         padding: 0 1.5em;
+        margin-top: 100px;
     }
     .hero{
         background-position: 100% 45%;

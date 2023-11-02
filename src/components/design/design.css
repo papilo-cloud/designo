@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    margin-top: 80px;
 }
 .design .intro{ 
     width: 100%;
@@ -156,6 +157,7 @@
 @media screen and (min-width: 48em) {
     .design{
         padding: 0 1.5em;
+        margin-top: 100px;
     }
     .design .content{
         padding: 0;
