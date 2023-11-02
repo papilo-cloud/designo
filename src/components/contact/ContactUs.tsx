@@ -33,9 +33,9 @@ export const ContactUs = () => {
               </label>
               <p><i>Can't be empty</i></p>
             </div>
-            <div className="label">
+            <div className="label label1">
               <label>
-                <input type="text" placeholder="Your Message" />
+                <textarea  cols={30} rows={7} placeholder='Your Message'></textarea>
               </label>
               <p><i>Can't be empty</i></p>
             </div>
