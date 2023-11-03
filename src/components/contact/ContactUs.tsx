@@ -68,11 +68,11 @@ export const ContactUs = () => {
               <label>
                 <textarea
                   value={message.value}
-                  onChange={message.handleChange}  cols={30} rows={7} placeholder='Your Message'></textarea>
+                  onChange={message.handleChange}  cols={30}  placeholder='Your Message'></textarea>
               </label>
               {message.value.trim().length <= 0 && bool ? <p><i>Can't be empty</i></p>: ''}
             </div>
-            <button type='submit' className="btn light-btn">submit</button>
+            <button type='submit' className="btn btn-light">submit</button>
           </form>
           </div>
         </div>
