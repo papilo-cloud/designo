@@ -70,9 +70,10 @@
     height: 100%;
     border: none;
     outline: none;
-    background-color: inherit;
+    background-color: #E7816B;
     color: #fff;
 }
+
 .label label input::placeholder, .label textarea::placeholder{
     color: #fff;
 }
@@ -81,19 +82,22 @@
 }
 .label label input:focus, .label textarea:focus{
     border-bottom: 2px solid #fff;
+    background-color: inherit;
 }
 .label p{
-    position: relative;
+    position: absolute;
     background-image: url('../../assets/contact/desktop/icon-error.svg');
     background-repeat: no-repeat;
     background-position:0%;
+    width: 100%;
     height: 27px;
+    bottom: 0;
 }
 .label p i{
     position: absolute;
     color: red;
     bottom: 0;
-    left: 22px;
+    left: 24px;
     font-weight: 400;
     font-size: 14px;
 }

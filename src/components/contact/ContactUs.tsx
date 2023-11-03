@@ -1,6 +1,29 @@
+import { useState } from 'react'
 import './contact.css'
+import useForm from '../../utilities/useForm'
 
 export const ContactUs = () => {
+  const [bool, setBool] = useState(false)
+
+  const email = useForm()
+  const phone = useForm()
+  const name = useForm()
+  const message = useForm()
+
+
+  function HandleSubmit(e: React.FormEvent<HTMLElement>) {
+    e.preventDefault()
+    if (email.value.trim().length <= 0 && !email.value.includes('@')||(
+      name.value.trim().length <=0
+    )||(phone.value.trim().length <= 0)||(message.value.trim().length <= 0)) {
+      setBool(true)
+      setTimeout(() => {
+        setBool(false)
+      },3000)
+    } else{
+      alert('Details Submitted')
+    }
+  }
   return (
     <div className="contact-us">
         <div className="contact-bdy">
@@ -14,32 +37,42 @@ export const ContactUs = () => {
             </div>
           </div>
           <div className="form-bdy">
-          <form>
+          <form onSubmit={HandleSubmit}>
             <div className="label">
               <label>
-                <input type="text" placeholder="Name" />
+                <input type="text"
+                value={name.value}
+                onChange={name.handleChange} placeholder="Name" />
               </label>
-              <p><i>Can't be empty</i></p>
+              {name.value.trim().length <= 0 && bool ? <p><i>Can't be empty</i></p>: ''}
             </div>
             <div className="label">
               <label>
-                <input type="email" placeholder="Email Adress" />
+                <input
+                value={email.value}
+                onChange={email.handleChange}
+                type="email" placeholder="Email Adress" />
               </label>
-              <p><i>please use a valid email address</i></p>
+              {email.value.trim().length <= 0 && bool ? <p><i>please use a valid email address</i></p>: ''}
             </div>
             <div className="label">
               <label>
-                <input type="phone" placeholder="Phone" />
+                <input type="phone"
+                value={phone.value}
+                onChange={phone.handleChange}
+                 placeholder="Phone" />
               </label>
-              <p><i>Can't be empty</i></p>
+              {phone.value.trim().length <= 0 && bool ? <p><i>Can't be empty</i></p>: ''}
             </div>
             <div className="label label1">
               <label>
-                <textarea  cols={30} rows={7} placeholder='Your Message'></textarea>
+                <textarea
+                  value={message.value}
+                  onChange={message.handleChange}  cols={30} rows={7} placeholder='Your Message'></textarea>
               </label>
-              <p><i>Can't be empty</i></p>
+              {message.value.trim().length <= 0 && bool ? <p><i>Can't be empty</i></p>: ''}
             </div>
-            <button className="btn light-btn">submit</button>
+            <button type='submit' className="btn light-btn">submit</button>
           </form>
           </div>
         </div>
