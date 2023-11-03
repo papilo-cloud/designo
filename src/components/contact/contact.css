@@ -10,7 +10,7 @@
     height: 764px;
     background-color: #E7816B;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
     background-image: url('../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg');
     background-repeat: no-repeat;
@@ -41,17 +41,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .contact-bdy .form-bdy form{
     height: 410px;
-    width: 90.4%;
-    background-color: bisque;
+    width: 87.4%;
+    /* background-color: bisque; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
 }
 .form-bdy .label{
     position: relative;
     background-color: #E7816B;
+    height: 67px;
+}
+.form-bdy .label1{
+    height: unset;
     margin-top: 36px;
-    height: 26px;
+}
+.label label{
+    margin: 0;
+    padding: 0;
+}
+.label label input, .label textarea{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #fff;
+}
+.label label input::placeholder, .label textarea::placeholder{
+    color: #fff;
+}
+.label label input, .label textarea{
+    border-bottom: 1px solid #fff;
+}
+.label label input:focus, .label textarea:focus{
+    border-bottom: 2px solid #fff;
+}
+.label p{
+    position: relative;
+    background-image: url('../../assets/contact/desktop/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position:0%;
+    height: 27px;
+}
+.label p i{
+    position: absolute;
+    color: red;
+    bottom: 0;
+    left: 22px;
+    font-weight: 400;
+    font-size: 14px;
 }
