@@ -6,7 +6,7 @@ import './design.css'
 export const Web = () => {
   return (
     <div className='container design web'>
-      <div className="intro">
+      <div className="intro" data-aos='fade-up' data-aos-duration="1000">
         <div className="text">
             <h1>Web Design</h1>
             <p>We build websites that serve as powerful marketing tools 

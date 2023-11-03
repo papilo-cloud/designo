@@ -1,12 +1,26 @@
+// import { MapContainer,Marker, TileLayer } from 'react-leaflet'
 import './location.css'
+// import { Marker } from 'leaflet'
 
 
 export const Location = () => {
+    // let positionCN: [number, number] = [52.15, 13.38]
   return (
     <div className="mainn">
         <div className="locate">
             <div className="locates flip" data-aos='fade-up' data-aos-duration="1000">
-                <div className="img canada"></div>
+                <div className="img canada">
+                    {/* <MapContainer center={positionCN} zoom={13}
+                    scrollWheelZoom={true} >
+                        <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+                        <Marker position={positionCN} >
+                            
+                        </Marker>
+                    </MapContainer> */}
+                </div>
                 <div className="locate-mesg">
                     <h2>Canada</h2>
                     <div className="text" data-aos='zoom-in' data-aos-duration="1000">
@@ -19,7 +33,7 @@ export const Location = () => {
                             <p className="bold">Contact</p>
                             <p>P : +1 253-863-8967</p>
                             <p>M : contact@designo.co</p>
-                        </div>
+                        </div> 
                     </div>
                 </div> 
             </div>
