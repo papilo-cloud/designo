@@ -130,7 +130,7 @@
         background-image: url('../../assets/locations/tablet/image-map-uk.png');
     }
 }
-@media screen and (min-width: 51.2em) {
+@media screen and (min-width: 51.2em) { 
     .mainn{
         padding: 0;
     }
