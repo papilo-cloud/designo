@@ -5,7 +5,7 @@ import './design.css'
 export const App = () => {
   return (
     <div className='container apps design'>
-        <div className="intro">
+        <div className="intro" data-aos='fade-up' data-aos-duration="1000">
             <div className="text">
                 <h1>App Design</h1>
                 <p>Our mobile designs bring intuitive digital

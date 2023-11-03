@@ -7,7 +7,7 @@ import './design.css'
 export const Graphics = () => {
   return (
     <div className='container graphics design'>
-        <div className="intro">
+        <div className="intro"  data-aos='fade-up' data-aos-duration="1000">
             <div className="text">
                 <h1>Graphic Design</h1>
                 <p>We deliver eye-catching branding materials that are 
