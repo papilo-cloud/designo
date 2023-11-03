@@ -31,7 +31,8 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    color: white;
+    color: #fdf3f0;
+    font-size: 1em;
 }
 .contact-bdy .form-bdy{
     position: relative;
@@ -41,19 +42,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: aquamarine; */
 }
 .contact-bdy .form-bdy form{
     height: 410px;
     width: 87.4%;
-    /* background-color: bisque; */
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
 }
 .form-bdy .label{
     position: relative;
-    background-color: #E7816B;
     height: 67px;
 }
 .form-bdy .label1{
@@ -70,18 +65,22 @@
     height: 100%;
     border: none;
     outline: none;
-    background-color: #E7816B;
-    color: #fff;
+    color: #fdf3f0;
+    background-color: transparent;
+    font-size: 1em;
+}
+.label textarea{
+    height: 140px;
 }
 
 .label label input::placeholder, .label textarea::placeholder{
-    color: #fff;
+    color: #fdf3f0;
 }
 .label label input, .label textarea{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fdf3f0;
 }
 .label label input:focus, .label textarea:focus{
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #fdf3f0;
     background-color: inherit;
 }
 .label p{
@@ -95,9 +94,47 @@
 }
 .label p i{
     position: absolute;
-    color: red;
+    color: rgba(255, 0, 0, 0.9);
     bottom: 0;
     left: 24px;
     font-weight: 400;
     font-size: 14px;
+}
+
+@media screen and (min-width: 48em) {
+    .contact-us .contact-bdy{
+        height: 711px;
+        background-image: url('../../assets/contact/desktop/bg-pattern-hero-desktop.svg');
+        background-position: -100% -100%;
+    }
+    .contact-bdy .contact-mesg{
+        height: 269px;
+    }
+    .contact-mesg .text{
+        height: 148px;
+        width: 573px;
+        text-align: left;
+    }
+    .contact-bdy .form-bdy{
+        height: 442px;
+    }
+    .contact-bdy .form-bdy form{
+        width: 573px;
+    }
+    .form-bdy .label1{
+        margin-top: 25px;
+    }
+    form button{
+        /* display: unset; */
+        float: right;
+    }
+    .form-bdy .label{
+        height: 60px;
+    }
+    .form-bdy .label1{
+        height: 110px;
+    }
+    .label textarea{
+        height: 100px;
+    }
 }
