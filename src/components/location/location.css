@@ -6,6 +6,11 @@
     padding: 0;
     margin-top: 80px;
 }
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
 .locate{
     position: relative;
     width: 100%;
@@ -27,7 +32,7 @@
     height: 320px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #E7816B;
+    /* background-color: #E7816B; */
 }
 .locates .canada{
     background-image: url('../../assets/locations/desktop/image-map-canada.png');
