@@ -27,7 +27,7 @@ export const Navbar = () => {
         window.addEventListener('scroll',scrollHeaderIntoView)
         return () => window.removeEventListener('scroll', scrollHeaderIntoView)
 
-    }, [])
+    }, []) 
 
     useEffect(() => {
         if (menu) {
